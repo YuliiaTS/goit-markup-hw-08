@@ -1,6 +1,6 @@
 .hero {
     text-align: center;
-    padding: 200px 0;
+    // padding: 200px 0;
     background: #2F303A;
     background-image: linear-gradient(
         to right,
@@ -9,17 +9,18 @@
     ), url(../images/img_hero.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    max-width: 1600px;
+    padding: 118px 0;
+    // max-width: 480px;
     margin: 0 auto;
 }
 
 .hero__title {
     color: var(--accent-color);
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.4;
+    font-size: 26px;
+    line-height: 1.6;
     letter-spacing: 0.06em;
-    max-width: 696px;
+    max-width: 360px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 30px;
