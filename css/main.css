@@ -215,7 +215,12 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   padding: 118px 0;
-  margin: 0 auto;
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding: 200px 0;
+  }
 }
 
 .hero__title {
@@ -228,6 +233,14 @@ body {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
+}
+
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    max-width: 696px;
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 
 .hero__btn {

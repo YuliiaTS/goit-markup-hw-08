@@ -1,6 +1,5 @@
 .hero {
     text-align: center;
-    // padding: 200px 0;
     background: #2F303A;
     background-image: linear-gradient(
         to right,
@@ -10,8 +9,9 @@
     background-repeat: no-repeat;
     background-position: center;
     padding: 118px 0;
-    // max-width: 480px;
-    margin: 0 auto;
+    @media screen and (min-width: 1200px) {
+        padding: 200px 0;
+    }
 }
 
 .hero__title {
@@ -24,6 +24,11 @@
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 30px;
+    @media screen and (min-width: 1200px) {
+        max-width: 696px;
+        font-size: 44px;
+        line-height: 1.36;
+    }
 }
 
 .hero__btn {
