@@ -308,6 +308,13 @@ body {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .feature__item {
+    -ms-flex-preferred-size: calc((100% - 4 * 30px) / 4);
+        flex-basis: calc((100% - 4 * 30px) / 4);
+  }
+}
+
 .feature__thumb {
   background-color: #F5F4FA;
   height: 120px;
@@ -333,10 +340,16 @@ body {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
-  text-align: left;
+  text-align: center;
   color: var(--text-color);
   margin-top: 0;
   margin-bottom: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .feature__title-item {
+    text-align: left;
+  }
 }
 
 .feature__text {

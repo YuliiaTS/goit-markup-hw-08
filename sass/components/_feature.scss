@@ -24,6 +24,9 @@
         width: calc(100% / 2 - 30px);
         margin-left: 30px;
     }
+    @media screen and (min-width: 1200px) {
+        flex-basis: calc((100% - 4 * 30px) / 4);
+    }
 }
 
 .feature__thumb {
@@ -45,10 +48,13 @@
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
-    text-align: left;
+    text-align: center;
     color: var(--text-color);
     margin-top: 0;
     margin-bottom: 10px;
+    @media screen and (min-width: 768px) {
+        text-align: left;
+    }
 }
 
 .feature__text {
