@@ -323,6 +323,12 @@ body {
   padding-bottom: 94px;
 }
 
+@media screen and (max-width: 1200px) {
+  .works {
+    display: none;
+  }
+}
+
 .works__title {
   font-weight: 700;
   font-size: 36px;
