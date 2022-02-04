@@ -25,6 +25,7 @@
     margin-bottom: 60px;
     @media screen and (min-width: 1200px) {
         margin-bottom: 0;
+        margin-right: 70px;
     }
 }
 
@@ -65,6 +66,8 @@ address {
     text-align: center;
     @media screen and (min-width: 1200px) {
         text-align: start;
+        margin-right: 93px;
+        margin-bottom: 0;
     }   
 }
 
@@ -76,6 +79,9 @@ address {
     color: var(--accent-color);
     margin-left: auto;
     margin-right: auto;
+    @media screen and (min-width: 1200px) {
+        margin: 0;
+    }
 }
 
 .f-social__list {
@@ -110,25 +116,23 @@ address {
 .signup {
     display: flex;
     flex-direction: column;
+    margin-top: 60px;
 
     @media screen and (min-width: 1200px) {
-        flex-direction: row;
+        display: inline-flex;
+        margin-top: 0;
     }
-}
-
-.signup__text {
-    margin-bottom: 20px;
 }
 
 .signup__thumb {
     display: flex;
     flex-direction: column;
+    margin-top: 20px;
     @media screen and (min-width: 1200px) {
         flex-direction: row;
         justify-content: center;
         align-items: center;
     }
-
 }
 
 .signup__input {
@@ -149,6 +153,7 @@ address {
     @media screen and (min-width: 1200px) {
         width: 358px;
         margin-right: 12px;
+        margin-bottom: 0;
     }
 }
 
@@ -186,7 +191,8 @@ address {
         background-color: #188CE8;
     }
     @media screen and (min-width: 1200px) {
-        min-width: 109px;
+        width: 109px;
+        text-align: center;
     }
 }
 
@@ -198,6 +204,6 @@ address {
     top: 50%;
     transform: translateY(-50%);
     @media screen and (min-width: 1200px) {
-        margin-right: 29px;
+        right: 29px;
     }
 }
