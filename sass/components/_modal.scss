@@ -146,13 +146,16 @@
 
 .checkbox__text {
     font-weight: 400;
-    font-size: 1.7;
-    line-height: 24px;
+    font-size: 12px;
+    line-height: 1.17;
     letter-spacing: 0.03em;
     color: #757575;
     display: flex;
     justify-content: center;
     align-items: center;
+    @media screen and (min-width: 1200px) {
+        line-height: 1.7;
+    }
 }
 
 .checkbox__text span {

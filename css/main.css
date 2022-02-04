@@ -1057,14 +1057,6 @@ address {
 @media screen and (min-width: 1200px) {
   .modal {
     width: 528px;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%) scale(1);
-            transform: translate(-50%, -50%) scale(1);
-    -webkit-transition: -webkit-transform 250ms;
-    transition: -webkit-transform 250ms;
-    transition: transform 250ms;
-    transition: transform 250ms, -webkit-transform 250ms;
   }
 }
 
@@ -1209,8 +1201,8 @@ address {
 
 .checkbox__text {
   font-weight: 400;
-  font-size: 1.7;
-  line-height: 24px;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: #757575;
   display: -webkit-box;
@@ -1222,6 +1214,12 @@ address {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .checkbox__text {
+    line-height: 1.7;
+  }
 }
 
 .checkbox__text span {
