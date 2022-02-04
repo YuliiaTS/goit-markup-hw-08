@@ -821,6 +821,7 @@ body {
 
 @media screen and (min-width: 1200px) {
   .footer__contacts {
+    display: inline;
     margin-bottom: 0;
     margin-right: 70px;
   }
