@@ -2,7 +2,6 @@
     background-color: #2F303A;
     padding-top: 60px;
     padding-bottom: 60px;
-    margin: auto;
 }
 
 .footer .container {
@@ -14,13 +13,23 @@
 
     @media screen and (min-width: 1200px) {
         align-items: baseline;
+        flex-wrap: nowrap;
+        // justify-content: flex-start;
     }
 }
 
 .footer__contacts {
     display: flex;
-    // margin-right: 70px;
+    flex-direction: column;
+    align-items: center;
     margin-bottom: 60px;
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 0;
+    }
+}
+
+address {
+    margin-top: 20px;
 }
 
 .f-contacts__address {
@@ -29,10 +38,15 @@
 
 .f-contacts__mail, .f-contacts__tel {
     color: rgba(255, 255, 255, 0.6);
+    display: inline-block;
 }
 
 .f-contacts__list {
     margin-top: 9px;
+    text-align: center;
+    @media screen and (min-width: 1200px) {
+        text-align: start;
+    }
 }    
 
 .f-contacts__item {
@@ -48,7 +62,10 @@ address {
 
 .footer__social {
     margin-bottom: 60px;
-    // margin-right: 93px;
+    text-align: center;
+    @media screen and (min-width: 1200px) {
+        text-align: start;
+    }   
 }
 
 .f-social__text, .signup__text {
@@ -57,6 +74,8 @@ address {
     line-height: 1.14;
     letter-spacing: 0.03em;
     color: var(--accent-color);
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .f-social__list {
@@ -89,26 +108,31 @@ address {
 }
 
 .signup {
-    @media screen and (min-width: 768px) {
-        margin-top: 60px;
-        display: flex;
-        flex-direction: column;
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (min-width: 1200px) {
+        flex-direction: row;
     }
 }
 
 .signup__text {
-    text-align: center;
+    margin-bottom: 20px;
 }
 
 .signup__thumb {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
+    flex-direction: column;
+    @media screen and (min-width: 1200px) {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
 }
 
 .signup__input {
-    width: 358px;
+    max-width: 450px;
     height: 50px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
@@ -116,11 +140,15 @@ address {
     background-color: transparent;
     color: var(--accent-color);
     padding: 15px 16px;
-    margin-right: 12px;
+    margin-bottom: 20px;
     outline: none;
     transition: border-color 250ms var(--timing-function);
     &:focus {
         border-color: var(--brand-color);
+    }
+    @media screen and (min-width: 1200px) {
+        width: 358px;
+        margin-right: 12px;
     }
 }
 
@@ -133,7 +161,11 @@ address {
 }
 
 .signup__wrap {
+    text-align: center;
     position: relative;
+    @media screen and (min-width: 1200px) {
+        text-align: start;
+    }
 }
 
 .signup__btn {
@@ -145,7 +177,6 @@ address {
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.06em;
-    text-align: center;
     display: inline-flex;
     min-width: 200px;
     height: 50px;
@@ -154,13 +185,19 @@ address {
     &:hover, &:focus {
         background-color: #188CE8;
     }
+    @media screen and (min-width: 1200px) {
+        min-width: 109px;
+    }
 }
 
 .signup__icon {
     fill: var(--accent-color);
     margin-left: 10px;
     position: absolute;
-    right: 29px;
+    right: 140px;
     top: 50%;
     transform: translateY(-50%);
+    @media screen and (min-width: 1200px) {
+        margin-right: 29px;
+    }
 }
