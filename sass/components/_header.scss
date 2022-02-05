@@ -85,3 +85,25 @@
     fill: currentColor;
     margin-right: 10px;
 }
+
+.menu-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+}
+
+.menu-toggle .icon-close {
+    display: none;
+}
+
+.menu-toggle.js-open-menu .icon-close {
+    display: block;
+}
+
+.menu-toggle.js-open-menu .icon-menu {
+    display: none;
+}
