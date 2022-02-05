@@ -787,6 +787,9 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     -webkit-box-pack: space-evenly;
@@ -817,6 +820,12 @@ body {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 60px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer__contacts {
+    margin-bottom: 0;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -868,6 +877,12 @@ address {
 .footer__social {
   margin-bottom: 60px;
   text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .footer__social {
+    margin-bottom: 0;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1001,6 +1016,12 @@ address {
 
 .signup__input:focus {
   border-color: var(--brand-color);
+}
+
+@media screen and (min-width: 768px) {
+  .signup__input {
+    width: 450px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
