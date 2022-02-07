@@ -216,10 +216,10 @@ address {
     fill: var(--accent-color);
     margin-left: 10px;
     position: absolute;
-    right: 140px;
     top: 50%;
-    transform: translateY(-50%);
+    left: 61%;
+    transform: translate(-50%, -50%);
     @media screen and (min-width: 1200px) {
-        right: 29px;
+        left: 75%;
     }
 }
