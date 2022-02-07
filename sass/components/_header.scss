@@ -2,14 +2,15 @@
   border-bottom-width: 1px;
   border-bottom-style: solid;
   border-bottom-color: #ececec;
+  padding: 10px 0;
+  @media screen and (min-width: 768px) {
+    padding: 0;
+  }
 }
 
 .header-container {
   display: flex;
   align-items: center;
-  // @media screen and (max-width: 768px) {
-  //   padding: 10px 0;
-  // }
 }
 
 .header-nav {
@@ -140,7 +141,7 @@
   background-color: #ffffff;
   z-index: 1;
   padding: 48px 40px;
-  transform: translateX(0);
+  transition: transform var(--timing-function) ease-in-out, visibility var(--timing-function);
   .container {
     width: 480px;
     height: 100%;
@@ -154,7 +155,6 @@
 
 .mob-menu.is-hidden {
   transform: translateX(100%);
-  transition: transform var(--timing-function) ease-in-out;
 }
 
 .menu-close-btn {

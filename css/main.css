@@ -85,6 +85,13 @@ body.modal-open {
   border-bottom-width: 1px;
   border-bottom-style: solid;
   border-bottom-color: #ececec;
+  padding: 10px 0;
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    padding: 0;
+  }
 }
 
 .header-container {
@@ -270,8 +277,10 @@ body.modal-open {
   background-color: #ffffff;
   z-index: 1;
   padding: 48px 40px;
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
+  -webkit-transition: visibility var(--timing-function), -webkit-transform var(--timing-function) ease-in-out;
+  transition: visibility var(--timing-function), -webkit-transform var(--timing-function) ease-in-out;
+  transition: transform var(--timing-function) ease-in-out, visibility var(--timing-function);
+  transition: transform var(--timing-function) ease-in-out, visibility var(--timing-function), -webkit-transform var(--timing-function) ease-in-out;
 }
 
 .mob-menu .container {
@@ -294,10 +303,6 @@ body.modal-open {
 .mob-menu.is-hidden {
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
-  -webkit-transition: -webkit-transform var(--timing-function) ease-in-out;
-  transition: -webkit-transform var(--timing-function) ease-in-out;
-  transition: transform var(--timing-function) ease-in-out;
-  transition: transform var(--timing-function) ease-in-out, -webkit-transform var(--timing-function) ease-in-out;
 }
 
 .menu-close-btn {
