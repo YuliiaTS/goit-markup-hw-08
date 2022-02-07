@@ -277,10 +277,12 @@ body.modal-open {
   background-color: #ffffff;
   z-index: 1;
   padding: 48px 40px;
-  -webkit-transition: visibility var(--timing-function), -webkit-transform var(--timing-function) ease-in-out;
-  transition: visibility var(--timing-function), -webkit-transform var(--timing-function) ease-in-out;
-  transition: transform var(--timing-function) ease-in-out, visibility var(--timing-function);
-  transition: transform var(--timing-function) ease-in-out, visibility var(--timing-function), -webkit-transform var(--timing-function) ease-in-out;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  -webkit-transition: -webkit-transform 250ms var(--timing-function);
+  transition: -webkit-transform 250ms var(--timing-function);
+  transition: transform 250ms var(--timing-function);
+  transition: transform 250ms var(--timing-function), -webkit-transform 250ms var(--timing-function);
 }
 
 .mob-menu .container {
@@ -346,7 +348,7 @@ body.modal-open {
   color: var(--brand-color);
 }
 
-.mob-menu-list__link--active::after {
+.mob-menu-list__link--active:hover::after {
   content: "";
   width: 100%;
   height: 4px;

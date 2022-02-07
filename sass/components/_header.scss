@@ -141,7 +141,8 @@
   background-color: #ffffff;
   z-index: 1;
   padding: 48px 40px;
-  transition: transform var(--timing-function) ease-in-out, visibility var(--timing-function);
+  transform: translateX(0);
+  transition: transform 250ms var(--timing-function);
   .container {
     width: 480px;
     height: 100%;
@@ -198,15 +199,15 @@
   color: var(--brand-color);
 }
 
-.mob-menu-list__link--active::after {
-  content: "";
-  width: 100%;
-  height: 4px;
-  border-radius: 2px;
-  background-color: var(--brand-color);
-  position: absolute;
-  left: 0;
-  bottom: 0;
+.mob-menu-list__link--active:hover::after {
+    content: "";
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--brand-color);
+    position: absolute;
+    left: 0;
+    bottom: 0;
 }
 
 .mob-contact__item {
