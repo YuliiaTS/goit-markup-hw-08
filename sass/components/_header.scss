@@ -222,6 +222,10 @@
   line-height: (40 / 34);
   letter-spacing: 0.02em;
   color: var(--brand-color);
+  @media screen and (max-width: 479px) {
+    font-size: 24px;
+    line-height: (28 / 24);
+  }
 }
 
 .mob-contact__link-mail {
@@ -236,6 +240,9 @@
   margin-top: 64px;
   margin-right: -20px;
   display: flex;
+  @media screen and (max-width: 479px) {
+    width: 100%;
+  }
 }
 
 .mob-social__item {
@@ -250,7 +257,11 @@
       position: absolute;
       bottom: 50%;
       transform: rotate(90deg);
+      @media screen and (max-width: 479px) {
+        width: 15px;
       }
+      }
+      
 }
 
 .mob-social__link {
@@ -259,4 +270,8 @@
   line-height: (22 / 18);
   letter-spacing: 1.04;
   color: var(--brand-color);
+
+  @media screen and (max-width: 479px) {
+    font-size: 11px;
+  }
 }
