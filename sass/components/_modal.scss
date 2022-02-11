@@ -35,6 +35,7 @@
   @media screen and (max-width: 479px) {
     max-width: 95vw;
     height: 85vh;
+    padding: 20px;
   }
   @media screen and (min-width: 1200px) {
     width: 528px;
@@ -130,6 +131,10 @@
   &:focus {
     border-color: var(--brand-color);
   }
+  @media screen and (max-width: 479px) {
+    height: 40px;
+    margin-bottom: 0;
+  }
 }
 
 .form__wrap {
@@ -220,5 +225,11 @@
   &:hover,
   &:focus {
     background-color: #188ce8;
+  }
+  @media screen and (max-width: 479px) {
+    position: fixed;
+    right: 50px;
+    bottom: 10px;
+    margin: 0;
   }
 }
